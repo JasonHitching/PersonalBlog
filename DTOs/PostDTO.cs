@@ -1,13 +1,8 @@
 /// <summary>
-/// Model for posts
+/// Data transfer object for posts
 /// </summary>
-public class Post
+public class PostDTO
 {
-    /// <summary>
-    /// ID of the post
-    /// </summary>
-    public int Id { get; set; }
-
     /// <summary>
     /// The post title
     /// </summary>
