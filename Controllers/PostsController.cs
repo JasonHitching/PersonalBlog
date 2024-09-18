@@ -1,13 +1,28 @@
+using Microsoft.AspNetCore.Mvc;
+
+
 /// <summary>
 /// Controller defining the API endpoints related to posts
 /// </summary>
-public class PostsController
+[ApiController]
+[Route("api/[controller]")]
+public class PostController : ControllerBase
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    public PostsController()
+
+    private readonly IPostService PostService;
+
+    public PostController()
     {
 
     }
+
+    /// <summary>
+    /// Retrieve all posts
+    /// </summary>
+    [HttpGet]
+    public void GetPosts(PostDTO postDTO)
+    {
+        // TODO: Implement
+    }
+}
 }
